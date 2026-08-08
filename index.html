@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-box {
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            width: 350px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: cursive;
+            margin-bottom: 30px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 9px 8px;
+            background: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            margin-bottom: 6px;
+            font-size: 12px;
+        }
+        .login-btn {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 7px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .signup-box {
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .signup-box a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">Instagram</div>
+            <form>
+                <input type="text" placeholder="Phone number, username, or email" class="input-field">
+                <input type="password" placeholder="Password" class="input-field">
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+        </div>
+        <div class="signup-box">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
